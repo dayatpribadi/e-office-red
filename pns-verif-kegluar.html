@@ -12,8 +12,8 @@
 		<meta property="og:title" content="E-Office Kabupaten Ogan Ilir" />
 		<meta property="og:url" content="#" />
 		<meta property="og:site_name" content="E-Office Kabupaten Ogan Ilir" />
-		<link rel="canonical" href="https://e-office.oganilirkab.go.id" />
-		<link rel="shortcut icon" href="assets/media/logos/fav.png" />
+		<link rel="canonical" href="e-office.oganilirkab.go.id" />
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
@@ -364,7 +364,7 @@
 								data-kt-swapper="true" data-kt-swapper-mode="prepend"
 								data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Log Absensi</h1>
+								<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Verifikasi Kegiatan Luar</h1>
 								<!--end::Heading-->
 								<!--begin::Breadcrumb-->
 								<ul class="breadcrumb breadcrumb-dot fw-bold fs-base my-1">
@@ -415,6 +415,7 @@
 									<!--end::Drawer toggle-->
 								</div>
 								<!--end::Activities-->
+								<!--end::Activities-->
 								<!--begin::Chat-->
 								<div class="d-flex d-none align-items-center ms-3 ms-lg-4">
 									<!--begin::Drawer wrapper-->
@@ -457,127 +458,134 @@
 						<!--begin::Container-->
 						<div class="container-xxl" id="kt_content_container">
 							<!--begin::Row-->
-							<div class="row gy-4 g-xl-8">
-								<div class="col-xl-12">
-									<!--begin::Notice-->
-									<div class="notice bg-light-primary rounded shadow py-4 px-6">
-										<!--begin::Input group-->
-										<div class="row mb-6 align-items-center">
-											<div class="col-12 col-md-3 mb-3">
-												<label for="exampleFormControlInput1" class="form-label">Bulan</label>
-												<select name="bulan" aria-label="Select a Country"
-												data-control="select2"
-												data-placeholder="Bulan"
-												class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
-												<option value="">Select a Country...</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-												</select>
-											</div>
-											<div class="col-12 col-md-3 mb-3">
-												<label for="exampleFormControlInput1" class="form-label">Tahun</label>
-												<select name="tahun" aria-label="Select a Country"
-												data-control="select2"
-												data-placeholder="Tahun"
-												class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
-												<option value="">Select a Country...</option>
-												<option value="2026">2026</option>
-												<option value="2025">2025</option>
-												<option value="2024">2024</option>
-												<option value="2023">2023</option>
-												<option value="2022">2022</option>
-												</select>
-											</div>
-											<div class="col-12 col-md-3 mb-3">
-												<label for="exampleFormControlInput1" class="form-label">SKPD</label>
-												<select name="skpd" aria-label="Select a Country"
-												data-control="select2"
-												data-placeholder="SKPD"
-												class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
-												<option value="">Select a Country...</option>
-												</select>
-											</div>
-											<div class="col-3 pt-3 pt-md-0 text-md-end">
-												<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap">Filter Pencarian</a>
-											</div>
-	
-										</div>
+							<!--begin::Notice-->
+							<div class="notice bg-light-primary rounded shadow">
+								<!--begin::Input group-->
+								<div class="row mb-6 align-items-center p-6">
+									<div class="col-12 col-md-3">
+										<label for="exampleFormControlInput1" class="form-label">Bulan</label>
+										<select name="skpd" aria-label="Select a Country"
+										data-control="select2"
+										data-placeholder="skpd"
+										class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+										<option value="">Select a Country...</option>
+										<option value="1">Dinas ...</option>
+										</select>
 									</div>
-									<!--end::Notice-->
+									<div class="col-12 col-md-3">
+										<label for="exampleFormControlInput1" class="form-label">Bulan</label>
+										<select name="bulan" aria-label="Select a Country"
+										data-control="select2"
+										data-placeholder="Bulan"
+										class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+										<option value="">Select a Country...</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										</select>
+									</div>
+									<div class="col-12 col-md-3">
+										<label for="exampleFormControlInput1" class="form-label">Tahun</label>
+										<select name="tahun" aria-label="Select a Country"
+										data-control="select2"
+										data-placeholder="Tahun"
+										class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+										<option value="">Select a Country...</option>
+										<option value="2026">2026</option>
+										<option value="2025">2025</option>
+										<option value="2024">2024</option>
+										<option value="2023">2023</option>
+										<option value="2022">2022</option>
+										</select>
+									</div>
+									<div class="col-12 col-md-3 pt-3 pt-md-0 text-md-end">
+										<a href="#" class="btn btn-primary align-self-center text-nowrap">Filter Pencarian</a>
+									</div>
+
 								</div>
-							
+							</div>
+							<!--end::Notice-->
+							<div class="d-flex gy-5 g-xl-10">
+								<div class="col-xl-12">
+								</div>
+							</div>
+							<!--end::Row-->
 
 							<!--begin::Documents toolbar-->
-							<div class="row pt-5">
-								<div class="d-flex flex-wrap flex-stack mb-2 pe-0 ps-4">
-									<!--begin::Title-->
-									<h3 class="fw-bolder my-2">Data Log Absensi
-									<span class="fs-6 text-gray-400 fw-bold ms-1">Periode : Desember 2023</span></h3>
-									<!--end::Title-->
-									<!--begin::Controls-->
-									<div class="d-flex my-2">
-										<!--end::Search-->
-										<a type="button" class='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah">
-											<i class="fa fa-plus-circle me-2"></i>
-											Tambah Log Absen</a>
-									</div>
-									<!--end::Controls-->
+							<div class="d-flex flex-wrap flex-stack mb-5">
+								<!--begin::Title-->
+								<h3 class="fw-bolder my-2">Data Kegiatan Luar
+								<span class="fs-6 text-gray-400 fw-bold ms-1">Periode : Desember 2023</span></h3>
+								<!--end::Title-->
+								<!--begin::Controls-->
+								<div class="col-12 col-md-3">
+									<select name="skpd" aria-label="Select a Country"
+									data-control="select2"
+									data-placeholder="Waktu Kegiatan Luar"
+									class="form-select form-select-solid form-select-lg fw-bold border border-warning">
+									<option value="">Waktu Kegiatan Luar...</option>
+									<option value="1">Kegiatan Luar Pagi</option>
+									<option value="1">Kegiatan Luar Pulang</option>
+									</select>
 								</div>
+								<!--end::Controls-->
 							</div>
 							<!--end::Documents toolbar-->
 
 							<!--begin::Row-->
-							<div class="row pt-5">
-								<div class="ps-4 pe-0">
-									<div class="col-12">
-										<div class="card">
-											<!--begin::Table-->
-											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
-												<!--begin::Table head-->
-												<thead>
-													<!--begin::Table row-->
-													<tr class="text-start text-dark border border-dashed bg-light-danger fw-bolder fs-7 text-uppercase gs-0">
-														<th class="align-middle text-center">No</th>
-														<th class="align-middle text-center">NIP</th>
-														<th class="align-middle text-center">Nama</th>
-														<th class="text-center">Tanggal</th>
-														<th class="align-middle text-center">Status</th>
-														<th class="align-middle text-center">Aksi</th>
-													</tr>
-													<!--end::Table row-->
-												</thead>
-												<!--end::Table head-->
-												<!--begin::Table body-->
-												<tbody class="text-gray-600 fw-bold">
-													
-													<!--begin::Table row-->
-													<tr class="text-center">
-														<td>1</td>
-														<td>196510221993031003</td>
-														<td>M. Ahmad</td>
-														<td>01 November 2023</td>
-														<td>Dinas Luar</td>
-														<td>
-															<button type="button" class="btn btn-primary btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card"><i class="fa fa-eye"></i></button>
-															<button type="button" class="btn btn-danger btn-icon btn-sm"><i class="fa fa-trash"></i></button>
-															<button type="button" class="btn btn-success btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#kt_modal_edit"><i class="fa fa-edit"></i></button>
-														</td>
-													</tr>
-													<!--end::Table row-->
-												</tbody>
-												<!--end::Table body-->
-											</table>
-											<!--end::Table-->
-										</div>
-									</div>
+							<div class="row">
+								<div class="table-responsive">
+									<!--begin::Table-->
+									<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
+										<!--begin::Table head-->
+										<thead>
+											<!--begin::Table row-->
+											<tr class="text-start text-dark bg-light border border-dashed fw-bolder fs-7 text-uppercase gs-0">
+												<th class="w-10px ps-2 pe-2">
+													<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+														<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_users .form-check-input" value="1" />
+													</div>
+												</th>
+												<th class="min-w-125px">No</th>
+												<th class="min-w-125px">NIP</th>
+												<th class="min-w-125px">Nama</th>
+												<th class="min-w-125px">Tgl/Waktu</th>
+												<th class="min-w-125px">Status</th>
+												<th class="min-w-125px">Keterangan</th>
+												<th class="text-end pe-2 min-w-100px">Aksi</th>
+											</tr>
+											<!--end::Table row-->
+										</thead>
+										<!--end::Table head-->
+										<!--begin::Table body-->
+										<tbody class="text-gray-600 fw-bold">
+											<!--begin::Table row-->
+											<tr>
+												<td class="w-10px ps-2 pe-2">
+													<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+														<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_users .form-check-input" value="1" />
+													</div>
+												</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+												<td>-</td>
+
+											</tr>
+											<!--end::Table row-->
+										</tbody>
+										<!--end::Table body-->
+									</table>
+									<!--end::Table-->
 								</div>
 							</div>
 							<!--end:Row-->
-
 							<!--begin::Pagination-->
 							<div class="d-flex flex-stack flex-wrap pt-10">
 								<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
@@ -616,520 +624,39 @@
 							</div>
 							<!--end::Pagination-->
 
-							<!--begin::Modal - Tambah Detail Card-->
-							<div class="modal fade" id="kt_modal_tambah" tabindex="-1" aria-hidden="true">
-								<!--begin::Modal dialog-->
-								<div class="modal-dialog modal-dialog-centered modal-lg">
-									<!--begin::Modal content-->
-									<div class="modal-content">
-										<!--begin::Modal header-->
-										<div class="modal-header">
-											<!--begin::Modal title-->
-											<h2>Tambah Log Absensi Pegawai</h2>
-											<!--end::Modal title-->
-											<!--begin::Close-->
-											<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-												<span class="svg-icon svg-icon-1">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-														<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-													</svg>
-												</span>
-												<!--end::Svg Icon-->
-											</div>
-											<!--end::Close-->
-										</div>
-										<!--end::Modal header-->
-										<!--begin::Modal body-->
-										<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-											<!--begin::Form-->
-											<form id="kt_modal_new_card_form" class="form" action="#">
-												<div class="row">
-													<div class="col-12 col-md-6">
-														<!--begin::Input group-->
-														<div class="d-flex flex-column mb-7 fv-row">
-															<label for="exampleFormControlInput1" class="form-label">Pilih Pegawai</label>
-															<select name="country" aria-label="Pilih Pegawai"
-															data-control="select2"
-															data-placeholder="Pilih Pegawai"
-															class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
-															<option value="">Select a Country...</option>
-															<option>Agung Laksono</option>
-															<option>Mahfud Siregar</option>
-															<option>Prabowo Sanjaya</option>
-															</select>
-														</div>
-														<!--end::Input group-->
-													</div>
-													<div class="col-12 col-md-6">
-														<!--begin::Input group-->
-														<div class="d-flex flex-column mb-7 fv-row">
-															<label for="exampleFormControlInput1" class="form-label">Pilih Alasan Tidak Hadir</label>
-															<select name="country" aria-label="Alasan Tidak Hadir"
-															data-control="select2"
-															data-placeholder="Alasan Tidak Hadir"
-															class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
-															<option value="">Select a Country...</option>
-															<option>Kurang Enak Badan</option>
-															<option>Ada Urusan Keluarga</option>
-															<option>Ziarah</option>
-															<option>Mengurus Anak Sakit</option>
-															</select>
-														</div>
-														<!--end::Input group-->
-													</div>
-													<!--begin::Input group-->
-													<div class="fv-row mb-8">
-														<!--begin::Label-->
-														<label class="required fs-6 fw-bold mb-2">Keterangan</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<textarea class="form-control form-control-solid" rows="3" placeholder="Isi Keterangan" name="settings_description">Experience share market at your fingertips with TICK PRO stock investment mobile trading app</textarea>
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="fv-row mb-8">
-														<!--begin::Dropzone-->
-														<div class="dropzone" id="kt_modal_create_project_settings_logo">
-															<!--begin::Message-->
-															<div class="dz-message needsclick">
-																<!--begin::Icon-->
-																<!--begin::Svg Icon | path: icons/duotune/files/fil010.svg-->
-																<span class="svg-icon svg-icon-3hx svg-icon-primary">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path opacity="0.3" d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM16 12.6L12.7 9.3C12.3 8.9 11.7 8.9 11.3 9.3L8 12.6H11V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18V12.6H16Z" fill="black" />
-																		<path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="black" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-																<!--end::Icon-->
-																<!--begin::Info-->
-																<div class="ms-4">
-																	<h3 class="dfs-3 fw-bolder text-gray-900 mb-1">File Pendukung/Surat Izin dll</h3>
-																	<span class="fw-bold fs-4 text-muted">Seret dan letakkan file disini untuk diupload</span>
-																</div>
-																<!--end::Info-->
-															</div>
-														</div>
-														<!--end::Dropzone-->
-													</div>
-													<!--end::Input group-->
-												</div>
-
-												<!--begin::Actions-->
-												<div class="text-center pt-15">
-													<button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">Batal</button>
-													<button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
-														<span class="indicator-label">Simpan</span>
-														<span class="indicator-progress">Please wait...
-														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-													</button>
-												</div>
-												<!--end::Actions-->
-											</form>
-											<!--end::Form-->
-										</div>
-										<!--end::Modal body-->
-									</div>
-									<!--end::Modal content-->
-								</div>
-								<!--end::Modal dialog-->
+						</div>
+						<!--end::Container-->
+						
+					</div>
+					<!--end::Content-->
+					<!--begin::Footer-->
+					<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+						<!--begin::Container-->
+						<div class="container d-flex flex-column flex-md-row flex-stack">
+							<!--begin::Copyright-->
+							<div class="text-dark order-2 order-md-1">
+								<span class="text-gray-400 fw-bold me-1">Developed by</span>
+								<a href="#" target="_blank" class="text-muted text-hover-primary fw-bold me-2 fs-6">Diskominfo Kab. Ogan Ilir 2023</a>
 							</div>
-							<!--end::Modal - New Card-->
-
-							<!--begin::Modal - Lihat Detail Card-->
-							<div class="modal fade" id="kt_modal_new_card" tabindex="-1" aria-hidden="true">
-								<!--begin::Modal dialog-->
-								<div class="modal-dialog modal-dialog-centered mw-650px">
-									<!--begin::Modal content-->
-									<div class="modal-content">
-										<!--begin::Modal header-->
-										<div class="modal-header">
-											<!--begin::Modal title-->
-											<h2>Add New Card</h2>
-											<!--end::Modal title-->
-											<!--begin::Close-->
-											<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-												<span class="svg-icon svg-icon-1">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-														<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-													</svg>
-												</span>
-												<!--end::Svg Icon-->
-											</div>
-											<!--end::Close-->
-										</div>
-										<!--end::Modal header-->
-										<!--begin::Modal body-->
-										<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-											<!--begin::Form-->
-											<form id="kt_modal_new_card_form" class="form" action="#">
-												<!--begin::Input group-->
-												<div class="d-flex flex-column mb-7 fv-row">
-													<!--begin::Label-->
-													<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-														<span class="required">Name On Card</span>
-														<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a card holder's name"></i>
-													</label>
-													<!--end::Label-->
-													<input type="text" class="form-control form-control-solid" placeholder="" name="card_name" value="Max Doe" />
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="d-flex flex-column mb-7 fv-row">
-													<!--begin::Label-->
-													<label class="required fs-6 fw-bold form-label mb-2">Card Number</label>
-													<!--end::Label-->
-													<!--begin::Input wrapper-->
-													<div class="position-relative">
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="Enter card number" name="card_number" value="4111 1111 1111 1111" />
-														<!--end::Input-->
-														<!--begin::Card logos-->
-														<div class="position-absolute translate-middle-y top-50 end-0 me-5">
-															<img src="assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
-															<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
-															<img src="assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
-														</div>
-														<!--end::Card logos-->
-													</div>
-													<!--end::Input wrapper-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="row mb-10">
-													<!--begin::Col-->
-													<div class="col-md-8 fv-row">
-														<!--begin::Label-->
-														<label class="required fs-6 fw-bold form-label mb-2">Expiration Date</label>
-														<!--end::Label-->
-														<!--begin::Row-->
-														<div class="row fv-row">
-															<!--begin::Col-->
-															<div class="col-6">
-																<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
-																	<option></option>
-																	<option value="1">1</option>
-																	<option value="2">2</option>
-																	<option value="3">3</option>
-																	<option value="4">4</option>
-																	<option value="5">5</option>
-																	<option value="6">6</option>
-																	<option value="7">7</option>
-																	<option value="8">8</option>
-																	<option value="9">9</option>
-																	<option value="10">10</option>
-																	<option value="11">11</option>
-																	<option value="12">12</option>
-																</select>
-															</div>
-															<!--end::Col-->
-															<!--begin::Col-->
-															<div class="col-6">
-																<select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
-																	<option></option>
-																	<option value="2021">2021</option>
-																	<option value="2022">2022</option>
-																	<option value="2023">2023</option>
-																	<option value="2024">2024</option>
-																	<option value="2025">2025</option>
-																	<option value="2026">2026</option>
-																	<option value="2027">2027</option>
-																	<option value="2028">2028</option>
-																	<option value="2029">2029</option>
-																	<option value="2030">2030</option>
-																	<option value="2031">2031</option>
-																</select>
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Row-->
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-md-4 fv-row">
-														<!--begin::Label-->
-														<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-															<span class="required">CVV</span>
-															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter a card CVV code"></i>
-														</label>
-														<!--end::Label-->
-														<!--begin::Input wrapper-->
-														<div class="position-relative">
-															<!--begin::Input-->
-															<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv" />
-															<!--end::Input-->
-															<!--begin::CVV icon-->
-															<div class="position-absolute translate-middle-y top-50 end-0 me-3">
-																<!--begin::Svg Icon | path: icons/duotune/finance/fin002.svg-->
-																<span class="svg-icon svg-icon-2hx">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path d="M22 7H2V11H22V7Z" fill="black" />
-																		<path opacity="0.3" d="M21 19H3C2.4 19 2 18.6 2 18V6C2 5.4 2.4 5 3 5H21C21.6 5 22 5.4 22 6V18C22 18.6 21.6 19 21 19ZM14 14C14 13.4 13.6 13 13 13H5C4.4 13 4 13.4 4 14C4 14.6 4.4 15 5 15H13C13.6 15 14 14.6 14 14ZM16 15.5C16 16.3 16.7 17 17.5 17H18.5C19.3 17 20 16.3 20 15.5C20 14.7 19.3 14 18.5 14H17.5C16.7 14 16 14.7 16 15.5Z" fill="black" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-															</div>
-															<!--end::CVV icon-->
-														</div>
-														<!--end::Input wrapper-->
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="d-flex flex-stack">
-													<!--begin::Label-->
-													<div class="me-5">
-														<label class="fs-6 fw-bold form-label">Save Card for further billing?</label>
-														<div class="fs-7 fw-bold text-muted">If you need more info, please check budget planning</div>
-													</div>
-													<!--end::Label-->
-													<!--begin::Switch-->
-													<label class="form-check form-switch form-check-custom form-check-solid">
-														<input class="form-check-input" type="checkbox" value="1" checked="checked" />
-														<span class="form-check-label fw-bold text-muted">Save Card</span>
-													</label>
-													<!--end::Switch-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Actions-->
-												<div class="text-center pt-15">
-													<button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">Discard</button>
-													<button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
-														<span class="indicator-label">Submit</span>
-														<span class="indicator-progress">Please wait...
-														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-													</button>
-												</div>
-												<!--end::Actions-->
-											</form>
-											<!--end::Form-->
-										</div>
-										<!--end::Modal body-->
-									</div>
-									<!--end::Modal content-->
-								</div>
-								<!--end::Modal dialog-->
-							</div>
-							<!--end::Modal - New Card-->
-
-
-							<!--begin::Modal - Edit Detail Card-->
-							<div class="modal fade" id="kt_modal_edit" tabindex="-1" aria-hidden="true">
-								<!--begin::Modal dialog-->
-								<div class="modal-dialog modal-dialog-centered mw-650px">
-									<!--begin::Modal content-->
-									<div class="modal-content">
-										<!--begin::Modal header-->
-										<div class="modal-header">
-											<!--begin::Modal title-->
-											<h2>Add New Card</h2>
-											<!--end::Modal title-->
-											<!--begin::Close-->
-											<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-												<span class="svg-icon svg-icon-1">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-														<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-													</svg>
-												</span>
-												<!--end::Svg Icon-->
-											</div>
-											<!--end::Close-->
-										</div>
-										<!--end::Modal header-->
-										<!--begin::Modal body-->
-										<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-											<!--begin::Form-->
-											<form id="kt_modal_new_card_form" class="form" action="#">
-												<!--begin::Input group-->
-												<div class="d-flex flex-column mb-7 fv-row">
-													<!--begin::Label-->
-													<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-														<span class="required">Name On Card</span>
-														<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a card holder's name"></i>
-													</label>
-													<!--end::Label-->
-													<input type="text" class="form-control form-control-solid" placeholder="" name="card_name" value="Max Doe" />
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="d-flex flex-column mb-7 fv-row">
-													<!--begin::Label-->
-													<label class="required fs-6 fw-bold form-label mb-2">Card Number</label>
-													<!--end::Label-->
-													<!--begin::Input wrapper-->
-													<div class="position-relative">
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="Enter card number" name="card_number" value="4111 1111 1111 1111" />
-														<!--end::Input-->
-														<!--begin::Card logos-->
-														<div class="position-absolute translate-middle-y top-50 end-0 me-5">
-															<img src="assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
-															<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
-															<img src="assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
-														</div>
-														<!--end::Card logos-->
-													</div>
-													<!--end::Input wrapper-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="row mb-10">
-													<!--begin::Col-->
-													<div class="col-md-8 fv-row">
-														<!--begin::Label-->
-														<label class="required fs-6 fw-bold form-label mb-2">Expiration Date</label>
-														<!--end::Label-->
-														<!--begin::Row-->
-														<div class="row fv-row">
-															<!--begin::Col-->
-															<div class="col-6">
-																<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
-																	<option></option>
-																	<option value="1">1</option>
-																	<option value="2">2</option>
-																	<option value="3">3</option>
-																	<option value="4">4</option>
-																	<option value="5">5</option>
-																	<option value="6">6</option>
-																	<option value="7">7</option>
-																	<option value="8">8</option>
-																	<option value="9">9</option>
-																	<option value="10">10</option>
-																	<option value="11">11</option>
-																	<option value="12">12</option>
-																</select>
-															</div>
-															<!--end::Col-->
-															<!--begin::Col-->
-															<div class="col-6">
-																<select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
-																	<option></option>
-																	<option value="2021">2021</option>
-																	<option value="2022">2022</option>
-																	<option value="2023">2023</option>
-																	<option value="2024">2024</option>
-																	<option value="2025">2025</option>
-																	<option value="2026">2026</option>
-																	<option value="2027">2027</option>
-																	<option value="2028">2028</option>
-																	<option value="2029">2029</option>
-																	<option value="2030">2030</option>
-																	<option value="2031">2031</option>
-																</select>
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Row-->
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-md-4 fv-row">
-														<!--begin::Label-->
-														<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-															<span class="required">CVV</span>
-															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter a card CVV code"></i>
-														</label>
-														<!--end::Label-->
-														<!--begin::Input wrapper-->
-														<div class="position-relative">
-															<!--begin::Input-->
-															<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv" />
-															<!--end::Input-->
-															<!--begin::CVV icon-->
-															<div class="position-absolute translate-middle-y top-50 end-0 me-3">
-																<!--begin::Svg Icon | path: icons/duotune/finance/fin002.svg-->
-																<span class="svg-icon svg-icon-2hx">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																		<path d="M22 7H2V11H22V7Z" fill="black" />
-																		<path opacity="0.3" d="M21 19H3C2.4 19 2 18.6 2 18V6C2 5.4 2.4 5 3 5H21C21.6 5 22 5.4 22 6V18C22 18.6 21.6 19 21 19ZM14 14C14 13.4 13.6 13 13 13H5C4.4 13 4 13.4 4 14C4 14.6 4.4 15 5 15H13C13.6 15 14 14.6 14 14ZM16 15.5C16 16.3 16.7 17 17.5 17H18.5C19.3 17 20 16.3 20 15.5C20 14.7 19.3 14 18.5 14H17.5C16.7 14 16 14.7 16 15.5Z" fill="black" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-															</div>
-															<!--end::CVV icon-->
-														</div>
-														<!--end::Input wrapper-->
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="d-flex flex-stack">
-													<!--begin::Label-->
-													<div class="me-5">
-														<label class="fs-6 fw-bold form-label">Save Card for further billing?</label>
-														<div class="fs-7 fw-bold text-muted">If you need more info, please check budget planning</div>
-													</div>
-													<!--end::Label-->
-													<!--begin::Switch-->
-													<label class="form-check form-switch form-check-custom form-check-solid">
-														<input class="form-check-input" type="checkbox" value="1" checked="checked" />
-														<span class="form-check-label fw-bold text-muted">Save Card</span>
-													</label>
-													<!--end::Switch-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Actions-->
-												<div class="text-center pt-15">
-													<button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">Discard</button>
-													<button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
-														<span class="indicator-label">Submit</span>
-														<span class="indicator-progress">Please wait...
-														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-													</button>
-												</div>
-												<!--end::Actions-->
-											</form>
-											<!--end::Form-->
-										</div>
-										<!--end::Modal body-->
-									</div>
-									<!--end::Modal content-->
-								</div>
-								<!--end::Modal dialog-->
-							</div>
-							<!--end::Modal - New Card-->
-
+							<!--end::Copyright-->
+							<!--begin::Menu-->
+							<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
+								<li class="menu-item">
+									<a href="#" target="_blank" class="menu-link px-2">Website Pemda</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" target="_blank" class="menu-link px-2">Dokumentasi</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" target="_blank" class="menu-link px-2">Call Center</a>
+								</li>
+							</ul>
+							<!--end::Menu-->
 						</div>
 						<!--end::Container-->
 					</div>
-					<!--end::Content-->
+					<!--end::Footer-->
 				</div>
-				<!--begin::Footer-->
-				<div class="footer pb-10 d-flex flex-lg-column" id="kt_footer">
-					<!--begin::Container-->
-					<div class="container d-flex flex-column flex-md-row flex-stack">
-						<!--begin::Copyright-->
-						<div class="text-dark order-2 order-md-1">
-							<span class="text-gray-400 fw-bold me-1">Developed by</span>
-							<a href="#" target="_blank" class="text-muted text-hover-primary fw-bold me-2 fs-6">Diskominfo Kab. Ogan Ilir 2023</a>
-						</div>
-						<!--end::Copyright-->
-						<!--begin::Menu-->
-						<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
-							<li class="menu-item">
-								<a href="#" target="_blank" class="menu-link px-2">Website Pemda</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" target="_blank" class="menu-link px-2">Dokumentasi</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" target="_blank" class="menu-link px-2">Call Center</a>
-							</li>
-						</ul>
-						<!--end::Menu-->
-					</div>
-					<!--end::Container-->
-				</div>
-				<!--end::Footer-->
 				<!--end::Wrapper-->
 
 			</div>
@@ -1157,6 +684,7 @@
 					</div>
 				</div>
 				<!--end::Header-->
+
 			</div>
 		</div>
 		<!--end::Activities drawer-->
@@ -3322,9 +2850,7 @@
 		<!--begin::Page Custom Javascript(used by this page)-->
 		<script src="assets/js/custom/widgets.js"></script>
 		<script src="assets/js/custom/apps/chat/chat.js"></script>
-		<!-- <script src="assets/js/custom/modals/create-app.js"></script> -->
-		<script src="assets/js/custom/modals/create-project.bundle.js"></script>
-		<script src="assets/js/custom/modals/offer-a-deal.bundle.js"></script>
+		<script src="assets/js/custom/modals/create-app.js"></script>
 		<script src="assets/js/custom/modals/upgrade-plan.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
