@@ -20,6 +20,7 @@
 		<!--begin::Page Vendor Stylesheets(used by this page)-->
 		<!--end::Page Vendor Stylesheets-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
+		<link href="assets/intro_js/intro.min.css" rel="stylesheet" type="text/css">
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
@@ -529,7 +530,7 @@
 							<div class="row pt-5">
 								<div class="d-flex flex-wrap flex-stack mb-2 pe-0 ps-4">
 									<!--begin::Title-->
-									<a type="button" class='btn btn-light-primary border border-white shadow btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah" da>
+									<a type="button" data-title="Tambah LKH" data-intro='Tombol Tambah LKH' class='btn btn-light-primary border border-white shadow btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah" da>
 										<i class="fa fa-plus-circle me-2"></i>
 										Tambah LKH</a>
 									<span class="fs-6 text-gray-400 fw-bold ms-1">Periode : Desember 2023</span></h3>
@@ -538,7 +539,7 @@
 									<div class="d-flex my-2 gap-4">
 										<!--end::Search-->
 
-										<a type="button" class='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah">
+										<a type="button" data-title="Download Rekap LKH" data-intro='Tombol Rekap LKH' class='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah">
 											<i class="fa fa-file-download me-2"></i>
 											Download Rekap LKH</a>
 									</div>
@@ -2605,6 +2606,7 @@
 		<!--end::Global Javascript Bundle-->
 
 		<!--begin::Page Custom Javascript(used by this page)-->
+		<script src="assets/intro_js/intro.min.js"></script>
 		<script src="assets/js/custom/modals/create-project.bundle.js"></script>
 		<script src="assets/js/custom/widgets.js"></script>
 		<script src="assets/js/custom/apps/chat/chat.js"></script>
@@ -2612,6 +2614,9 @@
 		<script src="assets/js/custom/modals/create-app.js"></script>
 		<script src="assets/js/custom/modals/offer-a-deal.bundle.js"></script>
 		<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
+		<script>
+			introJs().start();
+		</script>
 		<script>
 			var myDropzone = new Dropzone("#kt_dropzonejs_lkh", {
 				url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
@@ -2640,6 +2645,7 @@
     }
 );
 		</script>
+
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
