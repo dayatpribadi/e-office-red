@@ -76,7 +76,7 @@ var KTWidgets = {
                             colors: [s]
                         },
                         xaxis: {
-                            categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
                             axisBorder: {
                                 show: !1
                             },
@@ -205,7 +205,7 @@ var KTWidgets = {
                                 colors: [s]
                             },
                             xaxis: {
-                                categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
                                 axisBorder: {
                                     show: !1
                                 },
@@ -290,11 +290,11 @@ var KTWidgets = {
                 }))
             }(), a = document.getElementById("kt_charts_widget_1_chart"), o = parseInt(KTUtil.css(a, "height")), s = KTUtil.getCssVariableValue("--bs-gray-500"), r = KTUtil.getCssVariableValue("--bs-gray-200"), i = KTUtil.getCssVariableValue("--bs-primary"), l = KTUtil.getCssVariableValue("--bs-gray-300"), a && new ApexCharts(a, {
                 series: [{
-                    name: "Net Profit",
-                    data: [44, 55, 57, 56, 61, 58]
+                    name: "Surat Masuk",
+                    data: [44, 55, 57, 56, 61, 58, 76, 85, 101, 98, 87, 105]
                 }, {
-                    name: "Revenue",
-                    data: [76, 85, 101, 98, 87, 105]
+                    name: "Surat Keluar",
+                    data: [76, 85, 101, 98, 87, 105, 44, 55, 57, 56, 61, 58]
                 }],
                 chart: {
                     fontFamily: "inherit",
@@ -323,7 +323,7 @@ var KTWidgets = {
                     colors: ["transparent"]
                 },
                 xaxis: {
-                    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Agust", "Sep", "Okt", "Nov", "Des" ],
                     axisBorder: {
                         show: !1
                     },
@@ -375,7 +375,7 @@ var KTWidgets = {
                     },
                     y: {
                         formatter: function (e) {
-                            return "$" + e + " thousands"
+                            return " " + e + " Surat"
                         }
                     }
                 },
@@ -399,11 +399,11 @@ var KTWidgets = {
                     r = KTUtil.getCssVariableValue("--bs-gray-300");
                 e && new ApexCharts(e, {
                     series: [{
-                        name: "Net Profit",
-                        data: [44, 55, 57, 56, 61, 58]
+                        name: "Diverifikasi",
+                        data: [76, 85, 101, 98, 87, 105, 120, 130, 150, 200, 185, 189]
                     }, {
-                        name: "Revenue",
-                        data: [76, 85, 101, 98, 87, 105]
+                        name: "Ditolak",
+                        data: [44, 55, 57, 56, 61, 58, 76, 85, 101, 98, 87, 105]
                     }],
                     chart: {
                         fontFamily: "inherit",
@@ -432,7 +432,7 @@ var KTWidgets = {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Agust", "Sep", "Okt", "Nov", "Des" ],
                         axisBorder: {
                             show: !1
                         },
@@ -484,7 +484,7 @@ var KTWidgets = {
                         },
                         y: {
                             formatter: function (e) {
-                                return "$" + e + " thousands"
+                                return "" + e + " LKH"
                             }
                         }
                     },
@@ -755,11 +755,11 @@ var KTWidgets = {
                     s = KTUtil.getCssVariableValue("--bs-info");
                 e && new ApexCharts(e, {
                     series: [{
-                        name: "Net Profit",
-                        data: [40, 50, 65, 70, 50, 30]
+                        name: "Hadir",
+                        data: [40, 50, 65, 70, 50, 30, 40, 50, 65, 70, 50, 30]
                     }, {
-                        name: "Revenue",
-                        data: [-30, -40, -55, -60, -40, -20]
+                        name: "Dinas Luar",
+                        data: [-30, -40, -55, -60, -40, -20, -30, -40, -55, -60, -40, -20]
                     }],
                     chart: {
                         fontFamily: "inherit",
@@ -789,7 +789,7 @@ var KTWidgets = {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Agust", "Sep", "Okt", "Nov", "Des"],
                         axisBorder: {
                             show: !1
                         },
@@ -843,7 +843,7 @@ var KTWidgets = {
                         },
                         y: {
                             formatter: function (e) {
-                                return "$" + e + " thousands"
+                                return "" + e + " Pegawai"
                             }
                         }
                     },
