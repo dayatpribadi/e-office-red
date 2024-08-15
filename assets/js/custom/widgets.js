@@ -501,6 +501,134 @@ var KTWidgets = {
                 }).render()
             }(),
             function () {
+                var e = document.getElementById("kt_charts_widget_10_chart"),
+                    t = parseInt(KTUtil.css(e, "height")),
+                    a = KTUtil.getCssVariableValue("--bs-gray-500"),
+                    o = KTUtil.getCssVariableValue("--bs-gray-200"),
+                    s = KTUtil.getCssVariableValue("--bs-danger"),
+                    r = KTUtil.getCssVariableValue("--bs-gray-300");
+                e && new ApexCharts(e, {
+                    series: [{
+                        name: "Fake-GPS",
+                        data: [13, 11, 9, 7, 7, 5, 3, 3, 2, 1, 1, 1,1,1,1,1,1,0,0,0, 0, 0, 0]
+                    }],
+                    chart: {
+                        fontFamily: "inherit",
+                        type: "bar",
+                        height: 500,
+                        toolbar: {
+                            show: !1
+                        }
+                    },
+                    plotOptions: {
+                        bar: {
+                            barHeight: "100%",
+                            distributed: true,
+                            horizontal: true,
+                            borderRadius: 4,
+                            dataLabels: {
+                                position: "bottom"
+                            },
+                        }
+                    },
+                    legend: {
+                        show: !1
+                    },
+        
+                    dataLabels: {
+                        // enabled: !1
+                        enabled: true,
+                        textAnchor: 'start',
+                        style: {
+                          colors: ['#222']
+                        },
+                        formatter: function (val, opt) {
+                          return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+                        },
+                        offsetX: 0,
+                        dropShadow: {
+                          enabled: !1,
+                        }
+                    },
+                    stroke: {
+                        show: !0,
+                        width: 1,
+                        colors: ["#FFF"]
+                    },
+                    xaxis: {
+                        show: !1,
+                        categories: ["Dinsos", "Diskominfo", "Dinkes", "Disnaker", "Disparbud", "Distranstek", "Disperindag", "Dispenda", "Dispora", "Disperkim", "Disperkimtan", "Dispermas", "Disperindag", "Disperkim", "Disperkimtan", "Inspektorat", "Balitbangda", "Bapenda", "BKPSDM", "BPKAD", "BPBD", "Disdamkarmat", "Dishub"],
+                        axisBorder: {
+                            show: true
+                        },
+                        axisTicks: {
+                            show: false
+                        },
+                        labels: {
+                            show: false,
+                            style: {
+                                colors: a,
+                                fontSize: "12px"
+                            }
+                        }
+                    },
+                    yaxis: {
+                        labels: {
+                            show: !1,
+                            style: {
+                                colors: a,
+                                fontSize: "12px"
+                            }
+                        }
+                    },
+                    fill: {
+                        opacity: 1
+                    },
+                    states: {
+                        normal: {
+                            filter: {
+                                type: "none",
+                                value: 0
+                            }
+                        },
+                        hover: {
+                            filter: {
+                                type: "none",
+                                value: 0
+                            }
+                        },
+                        active: {
+                            allowMultipleDataPointsSelection: !1,
+                            filter: {
+                                type: "none",
+                                value: 0
+                            }
+                        }
+                    },
+                    tooltip: {
+                        style: {
+                            fontSize: "12px"
+                        },
+                        y: {
+                            formatter: function (e) {
+                                return "" + e + " Terindikasi"
+                            }
+                        }
+                    },
+                    colors: [s],
+                    grid: {
+                        borderColor: o,
+                        strokeDashArray: 4,
+                        yaxis: {
+                            lines: {
+                                show: !0
+                            }
+                        }
+                    }
+                }).render()
+            }(),
+
+            function () {
                 var e = document.getElementById("kt_charts_widget_3_chart"),
                     t = (parseInt(KTUtil.css(e, "height")), KTUtil.getCssVariableValue("--bs-gray-500")),
                     a = KTUtil.getCssVariableValue("--bs-gray-200"),

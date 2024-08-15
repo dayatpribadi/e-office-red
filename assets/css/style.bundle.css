@@ -54889,3 +54889,11 @@ body {
     background-color: #fff;
     border: 0
 }
+
+.tausand {
+    height: 250px !important;
+    overflow-y: scroll ;
+    overflow-x: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
