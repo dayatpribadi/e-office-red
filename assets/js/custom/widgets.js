@@ -542,8 +542,8 @@ var KTWidgets = {
                         style: {
                           colors: ['#222']
                         },
-                        formatter: function (val, opt) {
-                          return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+                        formatter: function (val) {
+                          return val
                         },
                         offsetX: 0,
                         dropShadow: {
@@ -574,7 +574,7 @@ var KTWidgets = {
                     },
                     yaxis: {
                         labels: {
-                            show: !1,
+                            show: true,
                             style: {
                                 colors: a,
                                 fontSize: "12px"
@@ -627,7 +627,6 @@ var KTWidgets = {
                     }
                 }).render()
             }(),
-
             function () {
                 var e = document.getElementById("kt_charts_widget_3_chart"),
                     t = (parseInt(KTUtil.css(e, "height")), KTUtil.getCssVariableValue("--bs-gray-500")),
@@ -999,17 +998,13 @@ var KTWidgets = {
                         name: "Net Profit",
                         type: "bar",
                         stacked: !0,
-                        data: [40, 50, 65, 70, 50, 30]
+                        data: [1, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7]
                     }, {
                         name: "Revenue",
                         type: "bar",
                         stacked: !0,
-                        data: [20, 20, 25, 30, 30, 20]
-                    }, {
-                        name: "Expenses",
-                        type: "area",
-                        data: [50, 80, 60, 90, 50, 70]
-                    }],
+                        data: [1, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7]
+                    },],
                     chart: {
                         fontFamily: "inherit",
                         stacked: !0,
@@ -1039,7 +1034,7 @@ var KTWidgets = {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        categories: ["Dinsos", "Diskominfo", "Dinkes", "Disnaker", "Disparbud", "Distranstek", "Disperindag", "Dispenda", "Dispora", "Disperkim", "Disperkimtan", "Dispermas", "Disperindag", "Disperkim", "Disperkimtan"],
                         axisBorder: {
                             show: !1
                         },
