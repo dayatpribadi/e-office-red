@@ -1037,12 +1037,12 @@ var KTWidgets = {
                     r = KTUtil.getCssVariableValue("--bs-info");
                 e && new ApexCharts(e, {
                     series: [{
-                        name: "Net Profit",
+                        name: "Tidak Terindikasi",
                         type: "bar",
                         stacked: !0,
-                        data: [1, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7]
+                        data: [41, 40, 37, 37, 36, 36, 35, 35, 34, 34, 33, 33]
                     }, {
-                        name: "Revenue",
+                        name: "Terindikasi",
                         type: "bar",
                         stacked: !0,
                         data: [1, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7]
@@ -1129,7 +1129,7 @@ var KTWidgets = {
                         },
                         y: {
                             formatter: function (e) {
-                                return "$" + e + " thousands"
+                                return " " + e + " "
                             }
                         }
                     },
