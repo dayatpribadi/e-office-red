@@ -61,7 +61,7 @@ var KTProjectList = {
                     data: {
                         datasets: [{
                             data: [136, 2.092],
-                            backgroundColor: ["#FCDC94", "#86AB89"]
+                            backgroundColor: ["#FF3D67", "#00A3FF"]
                         }],
                         labels: ["Terindikasi", "Tidak Terindikasi"]
                     },
