@@ -391,6 +391,48 @@ var KTWidgets = {
                 }
             }).render(),
             function () {
+                var e = document.getElementById("kt_charts_widget_AB_chart"),
+                    t = parseInt(KTUtil.css(e, "height")),
+                    a = KTUtil.getCssVariableValue("--bs-gray-500"),
+                    o = KTUtil.getCssVariableValue("--bs-gray-200"),
+                    s = KTUtil.getCssVariableValue("--bs-warning"),
+                    r = KTUtil.getCssVariableValue("--bs-gray-300");
+                e && new ApexCharts(e, {
+
+
+                        series: [{
+                          name: "Indikasi Fake GPS",
+                          data: [1, 3, 5, 11, 29, 36, 49, 59, 68, 80, 91, 100]
+                      }],
+                        chart: {
+                        height: 350,
+                        type: 'line',
+                        zoom: {
+                          enabled: false
+                        }
+                      },
+                      dataLabels: {
+                        enabled: false
+                      },
+                      stroke: {
+                        curve: 'straight'
+                      },
+                      title: {
+                        text: 'Trend Indikasi Penggunaan Aplikasi Fake GPS',
+                        align: 'left'
+                      },
+                      grid: {
+                        row: {
+                          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                          opacity: 0.5
+                        },
+                      },
+                      xaxis: {
+                        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                      }
+                }).render()
+            }(),
+            function () {
                 var e = document.getElementById("kt_charts_widget_2_chart"),
                     t = parseInt(KTUtil.css(e, "height")),
                     a = KTUtil.getCssVariableValue("--bs-gray-500"),
