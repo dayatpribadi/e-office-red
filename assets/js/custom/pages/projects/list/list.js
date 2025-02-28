@@ -218,6 +218,10 @@ var KTProjectList = {
 
             var t = document.getElementById("kt_project_list_chart3");
             if (t) {
+                // Atur ukuran canvas secara manual
+                t.width = 500;  // Lebar chart lebih besar
+                t.height = 500; // Tinggi chart lebih besar
+            
                 var e = t.getContext("2d");
                 new Chart(e, {
                     type: "doughnut",
@@ -229,43 +233,40 @@ var KTProjectList = {
                         labels: ["Dinsos", "Diskominfo", "Dinkes", "Disnaker", "Disparbud", "Distranstek", "Disperindag", "Dispenda", "Dispora", "Disperkim", "Disperkimtan", "Dispermas", "Disperindag", "Disperkim", "Disperkimtan"]
                     },
                     options: {
-                        chart: {
-                            fontFamily: "inherit"
-                        },
+                        responsive: true,
+                        maintainAspectRatio: false,
                         cutout: "30%",
-                        cutoutPercentage: 65,
-                        responsive: !0,
-                        maintainAspectRatio: !1,
-                        title: {
-                            display: !1
-                        },
                         animation: {
-                            animateScale: !0,
-                            animateRotate: !0
+                            animateScale: true,
+                            animateRotate: true
                         },
-                        tooltips: {
-                            enabled: !0,
-                            intersect: !1,
-                            mode: "nearest",
-                            bodySpacing: 5,
-                            yPadding: 10,
-                            xPadding: 10,
-                            caretPadding: 0,
-                            displayColors: !1,
-                            backgroundColor: "#20D489",
-                            titleFontColor: "#ffffff",
-                            cornerRadius: 4,
-                            footerSpacing: 0,
-                            titleSpacing: 0
+                        layout: {
+                            padding: {
+                                right: 20  // Menambahkan jarak antara chart dan legend
+                            }
                         },
                         plugins: {
                             legend: {
-                                display: !1
+                                display: true,
+                                position: "right",  // Meletakkan legend di sebelah kanan chart
+                                align: "center",  // Menyamakan posisi legend dengan chart
+                                labels: {
+                                    boxWidth: 40,  // Ukuran kotak warna dalam legend, membuat lebih rapi
+                                    padding: 10    // Menambahkan jarak antar legend items
+                                }
+                            },
+                            tooltip: {
+                                enabled: true,
+                                mode: "nearest",
+                                backgroundColor: "#20D489",
+                                titleColor: "#ffffff",
+                                cornerRadius: 4
                             }
                         }
                     }
-                })
+                });
             }
+            
 
             var t = document.getElementById("kt_project_list_chart30");
             if (t) {

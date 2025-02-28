@@ -465,8 +465,8 @@
 												<!--begin::Wrapper-->
 												<div class="d-flex flex-wrap pt-0">
 													<!--begin::Chart-->
-													<div class="col-xl-12 tausand">
-														<div id="kt_charts_widget_10_chart"></div>
+													<div class="col-xl-12 h-100">
+														<canvas id="myChart"></canvas>
 													</div>
 													<!--end::Chart-->
 												</div>
@@ -512,6 +512,7 @@
 										</div>
 									</div>
 								</div>
+		
 							</div>
 							<!--end::Timeline-->
 
@@ -674,11 +675,35 @@
 		<script src="assets/js/custom/apps/chat/chat.js"></script>
 		<script src="assets/js/custom/modals/create-app.js"></script>
 		<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-
 		<script src="assets/js/custom/pages/projects/list/list.js"></script>
 		<script src="assets/js/custom/modals/users-search.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+		<script>
+		  const ctx2 = document.getElementById('myChart');
+		
+		  new Chart(ctx2, {
+
+			type: 'bar',
+			data: {
+			  labels: ['Diskominfo', 'Bapenda', 'Bapeda', 'Inspektorat', 'Disperkimtan', 'Disporpa', 'Dinkes', 'Dinsos', 'DPMPTSP', 'DPPKB', 'Dukcapil', 'Kesbangpol', 'Kesbang', 'Kesra'],
+			  datasets: [{
+				label: 'Terindikasi',
+				data: [12, 19, 3, 5, 2, 3, 20, 5, 10, 15, 20, 25, 30, 35],
+				borderWidth: 1
+			  }]
+			},
+			options: {
+				indexAxis: 'y',
+			}
+		  });
+		</script>
 	</body>
 	<!--end::Body-->
 </html>
+
+
+  

@@ -557,7 +557,7 @@ var KTWidgets = {
                     chart: {
                         fontFamily: "inherit",
                         type: "bar",
-                        height: 500,
+                        height: 700,
                         toolbar: {
                             show: !1
                         }
