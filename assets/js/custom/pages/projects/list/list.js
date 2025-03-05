@@ -10,7 +10,7 @@ var KTProjectList = {
                     data: {
                         datasets: [{
                             data: [40, 60],
-                            backgroundColor: ["#50CD89", "#00A3FF"]
+                            backgroundColor: ["#133E87", "#FFA800"]
                         }],
                         labels: ["PNS", "PPPK"]
                     },
